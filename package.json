@@ -1,7 +1,7 @@
 {
   "name": "nexuscript-bash-action",
   "version": "1.0.0",
-  "description": "",
+  "description": "Execute a bash command from nexuscript",
   "main": "src/index.js",
   "scripts": {
     "dev": "webpack --mode development",
@@ -15,5 +15,17 @@
   },
   "dependencies": {
     "nexusdk": "github:wizebin/nexusdk"
+  },
+  "nexuscript": {
+    "type": "action",
+    "author": "nexuscript",
+    "price": "free",
+    "configuration": {
+      "command": "string"
+    },
+    "category": "terminal",
+    "build_command": "npm run build",
+    "dist_folder": "dist",
+    "dist_file": "dist/main.js"
   }
 }
